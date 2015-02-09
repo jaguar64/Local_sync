@@ -1,3 +1,0 @@
-FTP-Bridge
-
-This data is uploaded automaticly from the Jaguar64.eu FTP server.
