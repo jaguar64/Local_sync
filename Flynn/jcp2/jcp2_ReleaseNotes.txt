@@ -1,0 +1,54 @@
+jcp2 usage
+----------
+To see the parameters available:
+jcp2 or jcp2 -?
+
+
+Known issues
+------------
+* After each memory Bank download, you have to do a jcp2 -r
+-- If you don't, Bank 2 may not be downloaded correctly
+--- The problem existed also in previous versions
+* jcp2 connects to the first Jaguar is detect
+-- You can change this behavior by using the -serial and/or -uport parameters to connect to a specific Jaguar
+
+
+jcp2 2.0.5 Release note
+-----------------------
+* Add the Skunkboard serial number detection
+* Fixed the "MSVCR120D.dll not found" error message
+* Release version is available
+* Some changes in the parameters explanations (tentative)
+
+
+jcp2 2.0.4 Revision note
+------------------------
+* Project fix for the Windows XP compatibility problem
+
+
+jcp2 2.0.4 Release note
+-----------------------
+* Support Windows 64 bits
+* Add the USB port selection
+* Better parameters explanations (tentative)
+* Removed the Skunkboard firmware update
+
+
+jcp2 original Release note
+--------------------------
+* Check how to return (depend on BIOS rev.); fix probably the infinite loop present in The Removers's JCP code
+* M68K Rom Dump has been modified
+* M68K DumpVersion has been modified
+* Bios Upgrade 1.02.04
+
+
+jcp History
+-----------
+There are 5 jcp source packages, and hereafter a brief summary
+
+1) The Removers jcp version doesn't handle the Skunkboard v3 (or at least they do not display options to handle it)
+-- They have added support for the Skunk console communication, but I do not know yet if such addition has been done in Tursi code as well
+-- At a point, in 2012, The Removers stopped to update their jcp and missed the changes/fixes done 6 months later by Tursi/A31Chris
+2) The jcp version in the skunkboard.zip is the oldest jcp source code I've found
+3) The Skunkboard_full_release.zip file contains the newest / most recent jcp source code releases (dated from the 12th August 2012)
+-- jcp2 is based on this source code
