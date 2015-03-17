@@ -1,0 +1,29 @@
+---------------------------------------------
+| Binutils |  GCC  |      libc      |  GDB  |
+-------------------------------------------
+|   2.25   | 4.9.3 | newlib-2.2.0-1 | 7.8.2 |
+---------------------------------------------
+
+
+binutils
+--------
+Options used : --with-endian=big --disable-threads --with-cpu=m68000 --with-arch=m68k --target=m68k-elf --enable-win32-registry=binutils-2.25-M68k-elf --prefix /c/gnu/out --disable-nls
+
+gcc
+---
+(Release from 18th February 2015)
+Options used : --with-endian=big --disable-threads --with-cpu=m68000 --with-arch=m68k --target=m68k-elf --enable-win32-registry=binutils-2.25-M68k-elf --prefix /c/gnu/out --enable-languages=c,c++ --disable-nls --disable-shared --with-newlib --with-headers=../newlib-2.2.0-1/newlib/libc/include
+
+libc
+----
+Options used : --target m68k-elf --prefix /c/gnu/out
+
+GDB
+---
+Options used : --with-endian=big --disable-threads --with-cpu=m68000 --with-arch=m68k --target m68k-elf --prefix /c/gnu/out --disable-nls
+
+
+Patch
+-----
+crtstuff.c has been patched to avoid a compilation error (fix provided via Internet forum)
+-- One line added to undefine a definition
