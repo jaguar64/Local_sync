@@ -1,0 +1,31 @@
+jserve usage
+------------
+* To see the parameters available: jserve -?
+
+
+jserve 1.1a Release note
+------------------------
+* Windows XP compatible
+
+
+jserve 1.1 Release note
+-----------------------
+* USB port selection fix
+* verbose mode fix (all values are now taken in consideration)
+
+
+jserve 1.0 Release note
+-----------------------
+* Support 64 bits
+* Add USB port selection
+* Add Verbose mode
+* Added parameters
+- Display application information
+- Directory Selection for resources files
+-- JDB.COF
+-- turbow.bin
+- log on/off
+- log filename selection
+- USB port selection
+- Verbose mode
+- Port number selection
