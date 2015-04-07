@@ -1,0 +1,12 @@
+This setup is to help the GCC and Visual Studio error reporting integration.
+
+The problem came from the format error reporting between GCC and VS, there are not compatible so we can see the error messages in the VS Output window but we cannot interact with them. So, you have to look manually for the line(s) and file(s) to see the errors.
+ 
+This script takes the output produced by a batch file and converts the error messages. The following line has to be added in the NMake section of your project configuration properties for the :  Build, Rebuild All, and Clean Command Line.
+ 
+build.bat 2>&1 | c:\Perl\bin\perl.exe gccfilt.pl
+ 
+ 
+The Zip file contains the script and a screen capture from VS.
+ 
+I'm not the author of the script and the original link is here : http://www.codeproje...th-GCC-in-Visua
